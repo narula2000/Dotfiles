@@ -34,6 +34,9 @@ Plug 'tpope/vim-surround'
 Plug 'rhysd/vim-grammarous'
 Plug 'honza/vim-snippets'
 
+" Latex
+Plug 'lervag/vimtex'
+
 " Visual Aid
 Plug 'luochen1990/rainbow'
 Plug 'Yggdroot/indentLine'
