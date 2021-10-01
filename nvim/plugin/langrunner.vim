@@ -2,7 +2,7 @@
 autocmd FileType scala nmap <buffer> <leader>r :term sbt run <CR>
 
 " Test Scala
-autocmd FileType scala nmap <buffer> <leader>r :term sbt test <CR>
+autocmd FileType scala nmap <buffer> <leader>t :term sbt test <CR>
 
 " Run Markdown
 autocmd FileType markdown nmap <buffer> <leader>r :!make <CR>
