@@ -1,5 +1,5 @@
 " Compile Latex with Makefile
-autocmd FileType latex nmap <buffer> <leader>r :!make <CR>
+autocmd FileType tex nmap <buffer> <leader>r :!make <CR>
 
 " Run Scala
 autocmd FileType scala nmap <buffer> <leader>r :term sbt run <CR>
