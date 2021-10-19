@@ -24,6 +24,3 @@ autocmd FileType rust nmap <buffer> <leader>t :!cargo test<CR>
 
 " Help Vim recognize *.sbt and *.sc as Scala files
 autocmd BufRead,BufNewFile *.sbt,*.sc set filetype=scala
-
-" Remove White space when save
-autocmd BufWritePre * :%s/\s\+$//e
