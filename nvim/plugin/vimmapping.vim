@@ -29,3 +29,6 @@ nnoremap <S-TAB> :bp<CR>
 
 " Use Esc to exit Insert mode in Terminal
 tnoremap <Esc> <C-\><C-n>
+
+" Remove White space when save
+nmap <leader>F  :%s/\s\+$//e <CR>
