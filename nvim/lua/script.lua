@@ -1,4 +1,3 @@
-require('telescope').load_extension('fzf')
 require('telescope').load_extension('coc')
 
 require('telescope').setup{

@@ -11,7 +11,6 @@ call plug#begin('~/.config/nvim/plugged')
 " Telescope Plugins
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'fannheyward/telescope-coc.nvim'
 
 " NerdTree Plugins
@@ -45,7 +44,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'bling/vim-airline'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'mhinz/vim-startify'
-Plug 'sainnhe/gruvbox-material'
+Plug 'sainnhe/gruvbox-material'a
+Plug 'lifepillar/vim-solarized8'
 call plug#end()
 
 " Lua Config

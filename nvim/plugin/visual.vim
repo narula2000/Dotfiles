@@ -1,6 +1,6 @@
 " Color Scheme
-colorscheme gruvbox-material
 set background=dark
+colorscheme solarized8
 let g:gruvbox_contrast_dark = 'hard'
 
 " List all Buffer
