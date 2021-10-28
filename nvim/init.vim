@@ -42,9 +42,10 @@ Plug 'Yggdroot/indentLine'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 Plug 'mhinz/vim-startify'
-Plug 'sainnhe/gruvbox-material'a
+Plug 'sainnhe/gruvbox-material'
 Plug 'lifepillar/vim-solarized8'
 call plug#end()
 
