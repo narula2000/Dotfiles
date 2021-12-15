@@ -92,7 +92,6 @@ source /usr/share/doc/fzf/examples/completion.zsh
 export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/.script:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-export DENO_INSTALL="/home/vic/.deno"
 export FORMAT="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n====================================="
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"

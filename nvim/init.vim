@@ -28,7 +28,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
-Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'rhysd/vim-grammarous'
 Plug 'honza/vim-snippets'
@@ -43,7 +42,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'mhinz/vim-startify'
 Plug 'sainnhe/gruvbox-material'
 Plug 'lifepillar/vim-solarized8'

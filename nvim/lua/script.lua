@@ -5,7 +5,8 @@ require('telescope').setup{
         prompt_prefix = "-> ",
         file_ignore_patterns = {
             "node_modules",
-            "target"
+            "target",
+            "data/db",
         } 
     }
 }
