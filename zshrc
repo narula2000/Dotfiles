@@ -77,8 +77,6 @@ plugins=(
     zsh-completions 
     zsh-autosuggestions
     docker
-    kubectl
-    minikube
     sudo
 )
 
@@ -101,7 +99,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -119,4 +117,3 @@ alias dkc='docker-compose'
 alias dcup='docker-compose up -d'
 alias dcdown='docker-compose down'
 alias init-notebook='pipenv install numpy pandas notebook matplotlib scipy seaborn mpld3 autopep8'
-
