@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Check for session name
+if [ -z "$1" ]
+  then
+    echo "Session Name needed"
+    exit 1
+fi
+
+# var for session name (to avoid repeated occurences)
+session_name=$1
+
+# Start the session and window in cwd
+tmux new-session -s "$session_name" -n zsh -d
+
+# Create a bunch of windows in cwd
+for i in {1..2}; do
+    tmux new-window -t "$session_name:$i" -n "zsh"
+done
+
+# Select window #0 and attach to the session
+tmux select-window -t "$session_name:0"
+tmux -2 attach-session -t "$session_name"
