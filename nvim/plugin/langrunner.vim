@@ -1,23 +1,26 @@
 " Compile Latex with Makefile
-autocmd FileType tex nmap <buffer> <leader>r :!make <CR>
+autocmd FileType tex nmap <buffer> <leader>r :!make<CR>
 
 " Run Scala
-autocmd FileType scala nmap <buffer> <leader>r :term sbt run <CR>
+autocmd FileType scala nmap <buffer> <leader>r :term sbt run<CR>
 
 " Test Scala
-autocmd FileType scala nmap <buffer> <leader>t :term sbt test <CR>
+autocmd FileType scala nmap <buffer> <leader>t :term sbt test<CR>
 
 " Run Markdown
-autocmd FileType markdown nmap <buffer> <leader>r :!make <CR>
+autocmd FileType markdown nmap <buffer> <leader>r :!make<CR>
 
 " Run C++
-autocmd FileType cpp nmap <buffer> <leader>r :!gccp % -o %< <CR>
+autocmd FileType cpp nmap <buffer> <leader>r :!gccp % -o %<CR>
 
 " Run Python
-autocmd FileType python nmap <buffer> <leader>r :!python3 % <CR>
+autocmd FileType python nmap <buffer> <leader>r :!python3 %<CR>
 
 " Run Rust
 autocmd FileType rust nmap <buffer> <leader>r :!cargo run<CR>
+
+" Check Rust
+autocmd FileType rust nmap <buffer> <leader>c :!cargo check<CR>
 
 " Test Rust
 autocmd FileType rust nmap <buffer> <leader>t :!cargo test<CR>

@@ -11,7 +11,7 @@ set shiftwidth=2
 set expandtab
 set autoindent
 set smartindent
-set nu 
+set nu
 set nowrap
 set ignorecase
 set smartcase
@@ -35,7 +35,14 @@ set incsearch
 set list
 set showbreak=↪\ 
 set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+set conceallevel=0
+
+" Change W to w
+:command! W w
 
 " Visual Ruler
 set colorcolumn=81,121
 highlight ColorColumn ctermbg=0 guibg=black
+
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+

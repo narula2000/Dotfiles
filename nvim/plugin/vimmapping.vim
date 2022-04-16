@@ -12,6 +12,9 @@ nnoremap <Leader>- :vertical resize -5<CR>
 " Undo till last changes
 noremap U :earlier 1f<CR>
 
+" Spell Check
+noremap <Leader>S :set spell!<CR>
+
 " Shortcutting split navigation, saving a keypress:
 map <C-h> <C-w>h
 map <C-j> <C-w>j

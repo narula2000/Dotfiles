@@ -30,22 +30,22 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'rhysd/vim-grammarous'
-Plug 'honza/vim-snippets'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'himkt/docstring.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " Latex
 Plug 'lervag/vimtex'
 
 " Visual Aid
-Plug 'luochen1990/rainbow'
-Plug 'Yggdroot/indentLine'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'mhinz/vim-startify'
-Plug 'sainnhe/gruvbox-material'
-Plug 'lifepillar/vim-solarized8'
+Plug 'chriskempson/base16-vim'
 call plug#end()
 
 " Lua Config

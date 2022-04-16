@@ -2,7 +2,6 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/vic/.oh-my-zsh"
 export VISUAL=nvim;
 export EDITOR=nvim;
 # Set name of the theme to load --- if set to "random", it will
@@ -80,20 +79,12 @@ plugins=(
     sudo
 )
 
-source $ZSH/oh-my-zsh.sh
 
-# Add Fzf completion
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-source /usr/share/doc/fzf/examples/completion.zsh
 # User configuration
-
 export MANPATH="/usr/local/man:$MANPATH"
 export PATH="$HOME/.script:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export FORMAT="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t{{.Status}}\n====================================="
-
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -108,12 +99,3 @@ alias ee="nvim ."
 alias e="nvim"
 alias open="xdg-open"
 alias vime="nvim ~/.config/nvim/init.vim"
-alias za="zathura *.pdf &"
-alias dk="docker"
-alias dkil="docker image ls"
-alias dkps='docker ps --format=$FORMAT'
-alias dkpsa='docker ps -a --format=$FORMAT'
-alias dkc='docker-compose'
-alias dcup='docker-compose up -d'
-alias dcdown='docker-compose down'
-alias init-notebook='pipenv install numpy pandas notebook matplotlib scipy seaborn mpld3 autopep8'
