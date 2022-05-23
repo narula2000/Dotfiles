@@ -1,0 +1,18 @@
+#!/bin/bash
+
+BGREEN='\033[1;32m'
+
+echo -e "${BGREEN}=============================Get Audio==================================="
+sudo systemctl restart pulseaudio.service
+
+echo -e "${BGREEN}==============================Weather===================================="
+curl wttr.in/Pattaya
+
+echo -e "${BGREEN}============================Update YAY===================================="
+yay -Syu
+echo -e "${BGREEN}========================================================================="
+
+echo -e "${BGREEN}=========================Get Crypto Update==============================="
+cd ~/Github/crypto-watcher
+bash update.sh
+echo -e "${BGREEN}========================================================================="

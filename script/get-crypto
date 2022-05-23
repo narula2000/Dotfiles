@@ -1,0 +1,9 @@
+#!/bin/bash
+
+BGREEN='\033[1;32m'
+
+cd ~/Github/crypto-watcher
+
+echo -e "${BGREEN}=========================Get Crypto Update==============================="
+bash update.sh
+echo -e "${BGREEN}========================================================================="

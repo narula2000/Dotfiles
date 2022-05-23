@@ -11,19 +11,21 @@ alt + Return
 
 # program launcher
 super + @space
-	dmenu_run
+	rofi -show run
 
 alt + @space
-	dmenu_run
+	rofi -show run
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
+alt + Escape
+	pkill -USR1 -x sxhkd
+
 # Lockscreeen
 super + shift + Escape
   betterlockscreen -l dimblur
-
 
 #
 # bspwm hotkeys
@@ -33,9 +35,19 @@ super + shift + Escape
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# close and kill
+# Close window
 super + q
-	bspc node -{c,k}
+	bspc node -c
+
+alt + q
+	bspc node -c
+
+# Kill window
+super + shift + q
+	bspc node -k}
+
+alt +  shift + q
+	bspc node -k
 
 # alternate between the tiled and monocle layout
 super + m
@@ -48,6 +60,10 @@ super + y
 # swap the current node and the biggest window
 super + g
 	bspc node -s biggest.window
+
+# Mirror and flip leaves of tree
+super + {comma,period}
+	bspc node @/ -F {horizontal,vertical}
 
 #
 # state/flags
@@ -98,6 +114,13 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# rotate
+super + shift + r
+  bspc node @parent -R 90
+
 #
 # preselect
 #
@@ -142,12 +165,21 @@ super + {Left,Down,Up,Right}
 super + r
 	alacritty -e ranger
 
+alt + r
+	alacritty -e ranger
+
 # Thunar
 super + shift + f
 	nemo
 
+alt + shift + f
+	nemo
+
 # Firefox
 super + shift + i
+  firefox
+
+alt + shift + i
   firefox
 
 # Flameshot Screenshot
