@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo modprobe -r psmouse
+
+sudo xinput disable "DELL0955:00 06CB:CDD5 Mouse"
+sudo xinput disable "DELL0955:00 06CB:CDD5 Touchpad"
+sudo xinput enable "DELL0955:00 06CB:CDD5 Mouse"
+sudo xinput enable "DELL0955:00 06CB:CDD5 Touchpad"
