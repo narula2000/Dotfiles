@@ -7,3 +7,4 @@ cd ~/Github/crypto-watcher
 echo -e "${BGREEN}=========================Get Crypto Update==============================="
 bash update.sh
 echo -e "${BGREEN}========================================================================="
+notify-send "Crypto Watcher" "Done\!"
