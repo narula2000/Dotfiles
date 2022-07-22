@@ -13,3 +13,4 @@ echo -e "${BGREEN}=========================Get Crypto Update====================
 cd ~/Github/crypto-watcher
 bash update.sh
 echo -e "${BGREEN}========================================================================="
+notify-send "Crypto Watcher" "Done\!"
